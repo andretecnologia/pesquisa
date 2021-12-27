@@ -1,4 +1,7 @@
-<h1>{{title}}</h1>
-<form (ngSubmit)="pesquisa()" action="">
-  <button type="submit">Pesquisar</button>
+<form class="details-form" (ngSubmit)="pesquisa()" action="">
+  <mat-form-field class="details-form__form-field">
+    <mat-label class="details-form__form-field__label">Logradouro</mat-label>
+    <input name="logradouroInformado" [(ngModel)]="logradouroInformado" class="details-form__form-field__input" matInput placeholder="informe um logradouro" value="">
+  </mat-form-field>
+  <button mat-flat-button color="primary">Pesquisar</button>
 </form>

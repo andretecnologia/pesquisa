@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pesquisa';
+  logradouroInformado!: string;
   pesquisa(){
-    console.log("Pesquisou")
+    console.log("Pesquisou " + this.logradouroInformado);
   }
 }

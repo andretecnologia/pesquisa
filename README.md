@@ -14,3 +14,13 @@ _app.module.ts_
 import { FormsModule } from '@angular/forms';
 FormsModule
 ```
+
+```
+ng add @angular/material --skip-confirmation
+
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
+MatInputModule,
+MatButtonModule,
+```
