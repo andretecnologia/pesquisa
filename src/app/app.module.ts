@@ -8,8 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
-@NgModule({
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({ 
   declarations: [
     AppComponent
   ],
@@ -17,11 +22,15 @@ import {MatButtonModule} from '@angular/material/button';
 
     MatInputModule,
     MatButtonModule,
+    MatTableModule,
+    MatIconModule, 
+    MatToolbarModule,
 
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
